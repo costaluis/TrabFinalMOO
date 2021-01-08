@@ -1,4 +1,4 @@
-# Trabalho 2 de Redes de Computadores
+# Trabalho Final de MOO
 
 ### **Alunos responsáveis**
 
@@ -8,41 +8,18 @@
 | Leonardo Cerce Guioto           | 10716640 |
 | Luis Fernando Costa de Oliveira | 10716532 |
 | Rodrigo Augusto Valeretto       | 10684792 |
+| Vitor Rodrigues Leonardi        | 10716567 |
 
 ---
 
-### Projeto
+### Introdução
 
-Para o segundo projeto da disciplina **SSC 0641 - Redes de computadores** foi requisitado
-aos discentes que realizassem uma implementação que simulasse o funcionamento da camada de enlace
-de uma rede. Dessa forma, foi implementado um programa que simula o envio de uma mensagem de um computador
-para outro.<br>
-Nesse processo foram realizadas todas as conversões necessárias de forma a trabalhar com bits, além da
-implementação de protocolos para verificar a qualidade da mensagem recebida, de forma a detectar possíveis
-erros gerados pelo meio de transmissão.<br>
-O ambiente de trabalho para escrita, compilação e execução do programa foi o sistema operacional ubuntu 20.04 LTS,
-uma distribuição de Linux. Por fim, para realizar a compilação do código foi utilizado o compilador
-g++ (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0.
+Para o trabalho final da disciplina de MOO, os discentes realizaram algumas modificações no 
+sistema previamente modelado no trabalho 1, além de inserir certos diagramas que foram requisitados
+como os diagramas de interação, comunicação e de classes. Além disso também foi gerado um código
+base para o sistema proposto, o qual se encontra nesse repositório.
 
----
+### Projeto - SocialCritics
 
-### Compilar e rodar o código
-
-Diferentemente do trabalho 1, nesse trabalho foi feito apenas um arquivo .cpp com todo o código necessário
-para a implementação, dessa forma basta executar os comandos de compilação no terminal e depois rodar
-o executável gerado.<br>
-Estando dentro da pasta raiz do programa executamos o seguinte comando para compilar:
-
-```
-g++ trab2.cpp -o trab2
-```
-
-O comando acima gerará um arquivo executável e para utilizá-lo basta digitar no terminal:
-
-```
-./trab2
-```
-
-Com isso o programa inicia sua execução, na qual é pedida uma mensagem que, quando inserida, simula a passagem
-por todos as camadas numa transmissão de rede. Ao fim disso tudo é exibido no terminal a mensagem recebida,
-juntamente com uma aviso caso tenha sido detectado algum erro de transmissão gerado pelo meio.
+O sistema corresponde a uma rede social de reviews e recomendações de todos os tipos de entretenimento disponíveis, sendo eles filmes, jogos, séries, músicas, animes, ou outras opções que estiverem disponíveis no banco de dados. O mesmo também tem um forte enfoque no armazenamento de críticas referentes a uma mídia podendo estas serem feitas por críticos verificados pelos nossos administradores, o que, em conjunto com a crítica do público, gera uma nota geral de avaliação. Além disso, os usuários podem ser amigos e seguir profissionais e críticos, por exemplo. A partir de suas reviews e críticas e da sua comunidade de amigos, o sistema é capaz de prover recomendações de entretenimento baseados no gosto do usuário. Através das mídias, o sistema também se relaciona com o RottenTomatoes,  Metacritic e IMDb. Com isso, para cada mídia, ele é capaz de exibir as notas e avaliações desses outros sistemas para o usuário.
+Cada usuário possui um perfil próprio, acessado através de email cadastrado e senha, sendo possível realizar autenticação em duas etapas através do número do celular. Ele pode editar sua foto de perfil, biografia, adicionar mídias favoritas, visualizar seus amigos, seguidores e usuários que ele segue.
